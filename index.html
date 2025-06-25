@@ -7,10 +7,12 @@
     <title>Receitas da vovó</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
         * {
             margin: 0px;
             padding: 0px;
+            font-family: "Montserrat";
         }
         h1 {
             color: black;
@@ -18,17 +20,47 @@
 
         header {
             background-color: lightskyblue;
-            border: 5px solid cyan;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 10vh;
+            padding: 0 16px;
         }
+
+        header ul {
+            display: flex;
+            list-style: none;
+            gap: 16px;
+        }
+
+        header ul li a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            border: 2px black solid;
+            padding: 11px;
+            border-radius: 10px;
+            background-color: wheat;
+        }
+        
 
         main {
             background-color: green;
-            border: 5px solid darkgreen;
-
+            height: 80vh;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+       
 
         footer {
             background-color: brown;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
     </style>
@@ -53,19 +85,22 @@
         </nav>
     </header>
     <main>
-        <h2>Bolo de Cenoura</h2>
-        <ol>
-            <li>Separar os ingredientes</li>
-            <li>Colocar os ingredientes no liquidificador</li>
-            <li>Colocar a massa em uma forma</li>
-            <li>Esperar a massa descansar por 10 minutos</li>
-            <li>Colocar no forno por 1 hora</li>
-            <li>Aproveite :P</li>
-        </ol>
+        <div class="container"> 
+            <h2>Bolo de Cenoura</h2>
+            <ol>
+                <li>Separar os ingredientes</li>
+                <li>Colocar os ingredientes no liquidificador</li>
+                <li>Colocar a massa em uma forma</li>
+                <li>Esperar a massa descansar por 10 minutos</li>
+                <li>Colocar no forno por 1 hora</li>
+                <li>Aproveite :P</li>
+            </ol> 
+        </div>
+       
     </main>
     <footer>
         <p>Desenvolvido por 
-            <strong>Pensamento Computacional 2025</strong>
+            <strong>Pensamento Computacional 2025</strong> &copy;
         </p>
     </footer>
 </body>
